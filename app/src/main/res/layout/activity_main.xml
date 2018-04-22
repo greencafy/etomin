@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#013ADF"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:paddingTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                   Bienvenido"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textColor="#FFFF"/>
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                 Para empezar selecciona una opción"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:textColor="#FFFF"/>
+
+        <Button
+            android:id="@+id/iniciar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:background="#FFFFFF"
+            android:text="Iniciar sesiòn"
+            android:textColor="#FA5858" />
+
+        <Button
+            android:id="@+id/sig"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#FA5858"
+            android:text="Crear cuenta"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
