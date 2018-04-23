@@ -26,7 +26,11 @@
         </activity>
         <activity android:name=".Registro" />
         <activity android:name=".inicioSesion" />
-        <activity android:name=".rescatarPin"></activity>
+        <activity android:name=".rescatarPin" />
+        <activity
+            android:name=".tablas"
+            android:label="@string/title_activity_tablas"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

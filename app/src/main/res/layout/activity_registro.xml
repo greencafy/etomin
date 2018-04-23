@@ -4,6 +4,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registro">
+    tools:context=".Registro"
+    android:background="#013ADF">
+    
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="            Proceso de registro"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textColor="#FFFF"/>
+
+        <TextView
+            android:paddingTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="              Completa los datos para crear tu cuenta"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:textColor="#FFFF"/>
+
+        <TextView
+            android:paddingTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Ingresa nombre de usuario"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:textColor="#FFFF"/>
+
+        <EditText
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#D8D8D8"
+            android:hint="Ingresa tu Usuario"/>
+        <TextView
+            android:paddingTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Ingresa PIN"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:textColor="#FFFF"/>
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#D8D8D8"
+            android:hint="Ingresa tu nuevo PIN"/>
+        <TextView
+            android:paddingTop="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Confirma tu PIN"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:textColor="#FFFF"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#D8D8D8"
+            android:hint="Confirma tu PIN"
+            />
+        <Button
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:text="Continuar"
+            android:background="#FA5858"
+            android:textColor="#FFFFFF"
+            android:layout_height="60dp"
+            />
+
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
