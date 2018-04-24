@@ -1,5 +1,6 @@
 package com.example.antoniocampos.etominv;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,10 +18,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.Button;
 import android.widget.TextView;
 
 public class tablas extends AppCompatActivity {
-
+Button s;
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -31,13 +33,12 @@ public class tablas extends AppCompatActivity {
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
 
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
+
     private ViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tablas);
 
@@ -56,7 +57,16 @@ public class tablas extends AppCompatActivity {
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
+        s = (Button)findViewById(R.id.cobrar);
+        s.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent siguiente = new Intent(tablas.this,cobro.class);
+                startActivity(siguiente);
+            }
 
+
+        });
 
     }
 

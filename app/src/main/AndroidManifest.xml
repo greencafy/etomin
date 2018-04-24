@@ -30,7 +30,8 @@
         <activity
             android:name=".tablas"
             android:label="@string/title_activity_tablas"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".cobro"></activity>
     </application>
 
 </manifest>
