@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#013ADF"
-    tools:context=".cobro">
+    tools:context=".lectura">
+
     <LinearLayout
         android:paddingTop="5dp"
         android:layout_width="match_parent"
@@ -17,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="10dp"
-            android:text="Cobrar"
+            android:text="Validación"
             android:textColor="#FFFFFF"
             android:textSize="40dp"
             android:textStyle="bold" />
@@ -30,7 +31,7 @@
             android:text="TOTAL A COBRAR"
             android:textSize="16dp"
             android:textColor="#FFFFFF"/>
-        <EditText
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -42,17 +43,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="fill_horizontal" >
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="ref."
-                android:textColor="#BDBDBD"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="210dp"
-                android:text="Subtotal"
+                android:layout_marginLeft="110dp"
+                android:text="Subtotal:"
                 android:textColor="#BDBDBD"/>
         </LinearLayout>
 
@@ -65,46 +61,29 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:text="Propinas / Extras"
-                android:textColor="#BDBDBD"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="160dp"
-                android:text="Calucular"
-                android:textColor="#BDBDBD"/>
-
-
+                android:text="Se requiere validacion"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="wrap_content"
+            android:paddingTop="10dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:paddingTop="20dp">
+            android:layout_gravity="center_horizontal" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:text="Concepto"
-                android:textColor="#BDBDBD" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="220dp"
-                android:text="Pago"
-                android:textColor="#BDBDBD" />
-
-
+                android:text="Ingresa el codigo verificador que se encuentra \n                     al reverso de la tarjeta"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="fill_vertical"
-            android:paddingTop="20dp">
+            android:paddingTop="10dp">
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -213,7 +192,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="40dp"
 
-               />
+                />
 
 
         </LinearLayout>
@@ -221,18 +200,16 @@
 
         <Button
             android:layout_marginTop="10dp"
-            android:id="@+id/continuar"
+            android:id="@+id/continuarPago"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_width="match_parent"
-            android:text="Continuar"
+            android:text="Continuar Pago"
             android:background="#FA5858"
             android:textColor="#FFFFFF"
             android:layout_height="60dp"
             />
 
     </LinearLayout>
-
-
 
 </android.support.constraint.ConstraintLayout>

@@ -6,22 +6,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class cobro extends AppCompatActivity {
-Button cobro;
+public class insertarTarjeta extends AppCompatActivity {
+    Button sig;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cobro);
+        setContentView(R.layout.activity_insertar_tarjeta);
 
-        cobro = (Button)findViewById(R.id.continuar);
-        cobro.setOnClickListener(new View.OnClickListener() {
+        sig = (Button)findViewById(R.id.sig);
+        sig.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent siguiente = new Intent(cobro.this,insertarTarjeta.class);
+                Intent siguiente = new Intent(insertarTarjeta.this,lectura.class);
                 startActivity(siguiente);
             }
         });
-
 
     }
 }

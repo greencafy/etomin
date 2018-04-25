@@ -6,22 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class cobro extends AppCompatActivity {
-Button cobro;
+public class lectura extends AppCompatActivity {
+Button continuarPago;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cobro);
-
-        cobro = (Button)findViewById(R.id.continuar);
-        cobro.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_lectura);
+        continuarPago = (Button)findViewById(R.id.continuarPago);
+        continuarPago.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent siguiente = new Intent(cobro.this,insertarTarjeta.class);
+                Intent siguiente = new Intent(lectura.this,firmar.class);
                 startActivity(siguiente);
             }
         });
-
 
     }
 }
